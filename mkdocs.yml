@@ -1,0 +1,17 @@
+
+site_name: My Project Documentation
+
+nav:
+    - Home: index.md
+    - API Reference:
+plugins:
+    - search
+    - mkdocstrings:
+        handlers:
+            python:
+                setup_commands:
+                    - pip install mkdocstrings-python
+
+# Paths to the documentation files
+docs_dir: docs
+site_dir: site
